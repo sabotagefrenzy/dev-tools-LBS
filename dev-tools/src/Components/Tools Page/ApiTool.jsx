@@ -102,7 +102,6 @@ const ApiTool = () => {
   return (
     <div className="bg-[#10002b] min-h-screen text-[#f7ebff]">
       <NavigationBar />
-
       {/* Title Section */}
       <section className="pt-30 pb-15 max-w-4xl mx-auto">
         <div className="flex justify-between items-center">
@@ -119,8 +118,7 @@ const ApiTool = () => {
           
         </div>
         <p className="text-sm md:text-base leading-relaxed">
-          Our Online API Tool is a versatile and user-friendly platform designed to simplify the process of working with APIs.
-          Just like Postman, it provides developers and teams with powerful features for testing, documenting, and managing APIs...
+        Our Online API Tool is an easy-to-use platform that helps developers work with APIs more efficiently. Like Postman, it lets you test, manage, and document APIs all in one place. Whether you're creating or testing an API, this tool makes your job easier with a clean interface and useful features. It's great for both solo developers and teams, helping you stay organized and work faster on any project.
         </p>
       </section>
 

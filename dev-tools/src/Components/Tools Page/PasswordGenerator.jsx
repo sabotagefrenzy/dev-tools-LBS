@@ -68,31 +68,29 @@ const PasswordGenerator = () => {
   };
 
   return (
-    <div>
+    <div className="bg-[#10002b] min-h-screen text-[#f7ebff] ">
       <NavigationBar />
-      <div className="bg-[#10002b] pt-20 px-25">
-        <div className="max-w-screen-xl mx-auto py-16">
           {/* Title and Description */}
-          <div className="text-[#f7ebff] mb-12">
-            <div className="flex items-center justify-between">
-              <h1 className="text-4xl font-extrabold text-[#c3b1ff] mb-6">
+        <section className="pt-40 pb-10 max-w-5xl mx-auto">
+          <div className="flex items-center justify-between">
+            <h1 className="text-4xl font-extrabold text-[#c3b1ff] mb-6">
                 {TOOL_NAME}
-              </h1>
-              <button onClick={toggleFavourite} className="text-2xl hover:scale-110  transition-transform">
+            </h1>
+            <button onClick={toggleFavourite} className="text-2xl hover:scale-110  transition-transform">
               {isFavourite ? (
                 <FiHeartFilled fill="#ff4d4d" stroke="#ff4d4d" />
               ) : (
                 <FiHeart stroke="#ffffff" fill="none" />
               )}
-              </button>
-            </div>
-            <p className="text-lg mt-4">
-              The Password Generator is a dependable and secure tool designed to help developers effortlessly create strong and unique passwords for their applications. It offers customizable features, including the ability to adjust password length, select character types (uppercase, lowercase, numbers, symbols), and exclude ambiguous characters. This ensures the generation of robust passwords that adhere to top-tier security standards. Streamline the password creation process and enhance the security of your applications with this user-friendly tool.
-            </p>
+            </button>
           </div>
+          <p className="text-lg ">
+            The Password Generator is a dependable and secure tool designed to help developers effortlessly create strong and unique passwords for their applications. It offers customizable features, including the ability to adjust password length, select character types (uppercase, lowercase, numbers, symbols), and exclude ambiguous characters. This ensures the generation of robust passwords that adhere to top-tier security standards. Streamline the password creation process and enhance the security of your applications with this user-friendly tool.
+          </p>
+        </section>
 
           {/* Password Generator Card */}
-          <div className="card gap-12 p-10 items-center mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 overflow-hidden rounded-lg bg-[#3a2f59]">
+          <section className="card gap-12 p-8 items-center mx-auto max-w-screen-lg lg:grid lg:grid-cols-2 overflow-hidden rounded-lg bg-[#3a2f59]">
             <div className="p-8 text-[#f7ebff]">
               <label className="block text-[#f7ebff]">Password Length</label>
               <div className="flex items-center">
@@ -141,9 +139,7 @@ const PasswordGenerator = () => {
               </button>
               <span className="text-2xl font-extrabold break-all text-[#f7ebff]">{password}</span>
             </div>
-          </div>
-        </div>
-      </div>
+          </section>
     </div>
   );
 };
